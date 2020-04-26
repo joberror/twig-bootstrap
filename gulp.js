@@ -1,5 +1,6 @@
 'use strict';
 
+//Load required node modules
 const Fiber = require('fibers');
 const gulp = require('gulp');
 const plugins = require('gulp-load-plugins')();
@@ -9,17 +10,14 @@ const browserSync = require('browser-sync').create();
 plugins.sass.compiler = require('sass');
 
 // Directory Environment
-let assetsDev = 'assets-dev',
+let
+    // Asset development directory /assets-dev/
+    assetsDev = 'assets-dev',
+    // Asset Production directory /assets-prod/
     assetsProd = 'assets-prod';
 
-// A simple timer
-let sloop = () => {
-    return new Promise(resolve => {
-        setTimeout(resolve, 2000);
-    });
-};
-
-// Minify Scripts using Terser toplevel,drop_console=true,sequences=false,ecma=6
+// Minify Scripts using Terser toplevel,drop_console=true,sequences=false,ecma=6.
+// All minified scripts goes to: /assets-prod/js/ folder with a .min suffix file name.
 let minifyJS = () =>
     gulp.src([assetsDev + '/js/*.js'])
         .pipe(plugins.terserJs({
@@ -33,7 +31,7 @@ let minifyJS = () =>
         .pipe(plugins.rename({ suffix: '.min'}))
         .pipe(gulp.dest(assetsProd + '/js/'));
 
-// Purge CSS
+// Purge CSS using node css-purge modules into the directory: /assets-dev/css/pg/
 let cssPurge = () =>
     gulp.src(assetsDev + '/css/*.css')
         .pipe(plugins.cssPurge({
@@ -43,7 +41,8 @@ let cssPurge = () =>
         }))
         .pipe(gulp.dest(assetsDev + '/css/pg/'));
 
-// Minify Styles using Clean CSS Node
+// Minify Styles using Clean CSS Node.
+// All minified scripts goes to: /assets-prod/css/ folder with a .min suffix file name.
 let minifyCSS = () =>
     gulp.src(assetsDev + '/css/pg/*.css')
         //.pipe(purgeCSS)
@@ -53,7 +52,7 @@ let minifyCSS = () =>
         .pipe(plugins.rename({ suffix: '.min' }))
         .pipe(gulp.dest(assetsProd + '/css/'));
 
-// Process Styles using Sass
+// Process .scss files in the directory: /assets-dev/scss/ using node Sass modules.
 let convertScss = () =>
     gulp.src(assetsDev + '/scss/*.scss')
         .pipe(plugins.sourcemaps.init())
@@ -74,7 +73,7 @@ let minifyImages = () =>
         }))
         .pipe(gulp.dest(assetsProd + '/img/'));
 
-// Minify SVG
+// Minify SVG in the directory /assets-dev/svg/ and save it to /assets-prod/svg/
 let minifySVG = () =>
     gulp.src(assetsDev + '/svg/*.svg')
         .pipe(plugins.image({ svgo:
@@ -87,20 +86,24 @@ let minifySVG = () =>
         }))
         .pipe(gulp.dest(assetsProd + '/svg/'));
 
-// Setting up BrowserSync server
+// Set up BrowserSync server
+// Reloads the browser after every save on files edit.
 let reload = (done) => {
     browserSync.reload();
     done();
 };
-
+// Initialise BrowserSync with default config
 let serve = (done) => {
     browserSync.init({
-        proxy: 'http://iamjoberror.test'
+        // TODO: Define the proxy host eg:
+        // Local development: 'http://localhost/mydev'
+        proxy: ''
     });
 
     done();
 };
 
+// Export all modules
 exports.minifyJS = minifyJS;
 exports.convertScss = convertScss;
 exports.cssPurge = cssPurge;
@@ -108,6 +111,7 @@ exports.minifyCSS = minifyCSS;
 exports.minifyImages = minifyImages;
 exports.minifySVG = minifySVG;
 
+// Watch task and perform routine task
 let watch = (done) => {
     // Watch and process CSS
     gulp.watch(assetsDev + '/scss/**/*', gulp.series(convertScss, cssPurge, minifyCSS, reload));
