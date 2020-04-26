@@ -1,0 +1,15 @@
+{# Extend the default template: default.twig #}
+{% extends 'default.twig' %}
+
+{# --- page title goes here --- #}
+{% block title %} Home {% endblock %}
+
+{# --- page content goes here --- #}
+{% block content %}
+    <section class="content"></section>
+{% endblock %}
+
+{# --- custom scripts and every content after body tag goes here --- #}
+{% block footer %}
+    <script type="module"></script>
+{% endblock %}
