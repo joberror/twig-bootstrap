@@ -6,6 +6,7 @@
   "homepage": "https://github.com/joberror/webdev-boilerplate",
   "email": "joberror@gmail.com",
   "repository": "github:joberror/webdev-boilerplate",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
     "brand-colors": "latest",
     "browser-sync": "latest",
