@@ -5,9 +5,10 @@
  * Detect and apply active menu class
  * @param {string} elClass css class name
  */
-let activeMenu = (elClass) =>
+let navLinkActive = (elClass) => {
     document.querySelector('nav a[href^="/' + location.pathname.split("/")[1] + '"]')
         .parentElement
         .classList.add(elClass);
+};
 
-export { activeMenu }
+export { navLinkActive }
