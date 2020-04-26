@@ -10,7 +10,7 @@ require 'setup.php';
 //$twig->addGlobal('css', 'file-name-without-extension');
 
 try {
-    echo $twig->render('default.twig');
+    echo $twig->render('home.twig');
 } catch (LoaderError $e) {
 } catch (RuntimeError $e) {
 } catch (SyntaxError $e) {
