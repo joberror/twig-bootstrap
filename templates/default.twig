@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {# --- Dynamic title --- #}
+    <title>{% block title %}{% endblock %}</title>
+    {# --- All head tags --- #}
+    {% include 'head.twig' %}
+
+    {# --- Load custom / page CSS --- #}
+    {% if css is defined %}
+        <link rel="stylesheet" href="/assets-prod/css/{{ css }}.min.css"/>
+    {% endif %}
+</head>
+<body>
+{# --- Attach Navigation -- nav.twig --- #}
+{% include 'nav.twig' %}
+
+{# --- Body contents goes here --- #}
+{% block content %}{% endblock %}
+
+{# Attach default and custom scripts #}
+{% include 'footer.twig' %}
+{% block footer %}{% endblock%}
+</body>
+</html>
