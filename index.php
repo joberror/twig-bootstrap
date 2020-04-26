@@ -6,6 +6,9 @@ use Twig\Error\SyntaxError;
 
 require 'setup.php';
 
+// Uncomment to add custom css file
+//$twig->addGlobal('css', 'file-name-without-extension');
+
 try {
     echo $twig->render('default.twig');
 } catch (LoaderError $e) {
