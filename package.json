@@ -1,0 +1,40 @@
+{
+  "name": "webdev-bolierplate",
+  "description": "Simple starter node plugins for web development",
+  "version": "1.0",
+  "license": "GNU General Public License (GPL)",
+  "homepage": "https://github.com/joberror/webdev-boilerplate",
+  "email": "joberror@gmail.com",
+  "repository": "github:joberror/webdev-boilerplate",
+  "devDependencies": {
+    "brand-colors": "latest",
+    "browser-sync": "latest",
+    "cssnano": "latest",
+    "family.scss": "latest",
+    "fibers": "latest",
+    "gulp": "latest",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-css-purge": "latest",
+    "gulp-image": "^6.1.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-terser-js": "latest",
+    "gulp-watch": "latest",
+    "kf-sass": "^1.0.1",
+    "node-sass": "latest",
+    "pineapple-sass": "latest",
+    "postcss": "latest",
+    "rfs": "latest",
+    "sass": "latest",
+    "sass-mq": "latest"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.1.2"
+  }
+}
