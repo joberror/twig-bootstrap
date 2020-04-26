@@ -1,6 +1,12 @@
+// Workbox
+// Set of libraries and Node Modules to cache web assets
+// Learn from here -> https://developers.google.com/web/tools/workbox
+
+// Load Workbox
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 workbox.setConfig({
+    // TODO: change to 'false' or delete this on production
     debug: true
 });
 
@@ -20,8 +26,11 @@ registerRoute(
 );
 
 registerRoute(
+    // Cache Javascript files
     /\.js$/,
+    // Use cache but update in the background
     new NetworkFirst({
+        // The cache name
         cacheName: 'script-cache',
     })
 );
@@ -44,7 +53,7 @@ registerRoute(
     })
 );
 
-// Cache the Google Fonts stylesheets with a stale while revalidate strategy.
+// Cache the Google Fonts stylesheets with a stale while re-validate strategy.
 registerRoute(
     /^https:\/\/fonts\.googleapis\.com/,
     new StaleWhileRevalidate({
