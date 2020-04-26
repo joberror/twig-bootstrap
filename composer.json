@@ -1,0 +1,19 @@
+{
+  "name": "webdev/boilerplate",
+  "description": "Starter setup for php twig development",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Joberror",
+      "email": "info@iamjoberror.com"
+    }
+  ],
+  "require": {
+    "twig/twig": "3.x-dev"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  }
+}
