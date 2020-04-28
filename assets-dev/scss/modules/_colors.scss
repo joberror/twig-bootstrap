@@ -1,0 +1,13 @@
+// Colors
+// Define all template colors and color mixins.
+
+//scss-lint:disable ColorKeyword ColorVariable
+
+// Template Colors
+// TODO: change colors to your preferred values
+$color-tmpl-background: gray(30);
+$color-tmpl-foreground: #fff;
+
+
+// load the Brand color sass module below
+//@import '../../../node_modules/brand-colors/dist/latest/scss/brand-colors.latest';
