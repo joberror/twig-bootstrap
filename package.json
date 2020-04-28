@@ -29,7 +29,6 @@
     "gulp-watch": "latest",
     "kf-sass": "^1.0.1",
     "node-sass": "latest",
-    "pineapple-sass": "latest",
     "postcss": "latest",
     "rfs": "latest",
     "sass": "latest",
