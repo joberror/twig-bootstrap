@@ -1,0 +1,17 @@
+// Libs.
+// All SCSS node and custom modules will be added here
+
+// Import Node modules below
+// NB: check node modules folder for their respective imports
+// eg import Family.css: @import '../../../node_modules/family.scss/source/src/family';
+
+// Added sass / scss modules are:
+// Family.css - url: https://lukyvj.github.io/family.scss/ -- manage the style of :nth-child elements
+// Sass-MQ - url: https://github.com/sass-mq/sass-mq -- compose media queries in an elegant way.
+// Kf-Sass - url: https://keyfram.milesalan.com/ -- modular sass animation library
+// RFS - url: https://github.com/twbs/rfs -- automates responsive resizing.
+// Brand-Colors - url: https://github.com/reimertz/brand-colors -- a color library of top brands.
+
+// Import custom modules below
+@import 'mixins', 'animation', 'vars';
+
