@@ -11,20 +11,20 @@
   * {
     scrollbar-color: $thumb-color $track-color;
     scrollbar-width: thin;
-  }
 
-  // Webkit and Edge Browsers
-  *::-webkit-scrollbar {
-    width: 12px;
+    // Webkit and Edge Browsers
+    &::-webkit-scrollbar {
+      width: 12px;
 
-    &-track {
-      background: $track-color;
-    }
+      &-track {
+        background: $track-color;
+      }
 
-    &-thumb {
-      background-color: $thumb-color;
-      border: $thumb-border-w solid $thumb-color;
-      border-radius: $thumb-radius;
+      &-thumb {
+        background-color: $thumb-color;
+        border: $thumb-border-w solid $thumb-color;
+        border-radius: $thumb-radius;
+      }
     }
   }
 }
