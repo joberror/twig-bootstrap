@@ -1,0 +1,35 @@
+// Main
+// includes all default generated styles.
+// resets, layouts, nav menu styles, etc.
+
+// import libraries
+@import 'modules/libs';
+
+// import defaults
+@import 'modules/reset';
+
+// set defaults
+html,
+body {
+  position: relative;
+}
+
+html {
+  font-size: $browser-font-size;
+}
+
+body {
+  background-color: $color-tmpl-background;
+  color: $color-tmpl-foreground;
+  font-family: $font-name;
+  font-size: $font-size-default;
+  line-height: $line-height;
+  text-rendering: optimizelegibility;
+
+  // import nav, template layout, etc by creating the respective files in modules folder
+  // eg @import 'modules/nav', 'modules/layout', etc.
+}
+
+// import custom classes
+@import 'modules/classes';
+
