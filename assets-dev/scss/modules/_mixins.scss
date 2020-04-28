@@ -1,0 +1,30 @@
+// Mixins
+// This file should include all your mixins.
+
+// -- Scrollbar Mixin
+// Beautify the scrollbar with this Snippet
+// URL: https://alligator.io/css/css-scrollbars/
+// eg: @include scrollbar(#000, #222, 10px, 2px)
+
+@mixin scrollbar ($thumb-color, $track-color, $thumb-radius, $thumb-border-w) {
+  // W3C recommended: supported by Firefox browser currently
+  * {
+    scrollbar-color: $thumb-color $track-color;
+    scrollbar-width: thin;
+  }
+
+  // Webkit and Edge Browsers
+  *::-webkit-scrollbar {
+    width: 12px;
+
+    &-track {
+      background: $track-color;
+    }
+
+    &-thumb {
+      background-color: $thumb-color;
+      border: $thumb-border-w solid $thumb-color;
+      border-radius: $thumb-radius;
+    }
+  }
+}
