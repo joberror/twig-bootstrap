@@ -6,7 +6,7 @@ use Twig\Error\SyntaxError;
 
 require 'setup.php';
 
-// Uncomment to add custom css file
+// Uncomment to add custom css file in directory /assets-prod/css/
 //$twig->addGlobal('css', 'file-name-without-extension');
 
 try {
