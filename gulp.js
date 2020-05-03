@@ -28,7 +28,7 @@ let minifyJS = () =>
                 sequences: false
             }
         }))
-        .pipe(plugins.rename({ suffix: '.min'}))
+        .pipe(plugins.rename({suffix: '.min'}))
         .pipe(gulp.dest(assetsProd + '/js/'));
 
 // Purge CSS using node css-purge modules into the directory: /assets-dev/css/pg/
@@ -49,7 +49,7 @@ let minifyCSS = () =>
         .pipe(plugins.cleanCss({debug: true}, (details) => {
             console.log(`${details.name}: ${details.stats.originalSize} ~ ${details.stats.minifiedSize}`);
         }))
-        .pipe(plugins.rename({ suffix: '.min' }))
+        .pipe(plugins.rename({suffix: '.min'}))
         .pipe(gulp.dest(assetsProd + '/css/'));
 
 // Process .scss files in the directory: /assets-dev/scss/ using node Sass modules.
@@ -76,7 +76,8 @@ let minifyImages = () =>
 // Minify SVG in the directory /assets-dev/svg/ and save it to /assets-prod/svg/
 let minifySVG = () =>
     gulp.src(assetsDev + '/svg/*.svg')
-        .pipe(plugins.image({ svgo:
+        .pipe(plugins.image({
+            svgo:
                 [
                     '--enable', 'cleanupIDs', 'convertShapeToPath',
                     'convertEllipseToCircle', 'removeStyleElement', 'removeDimensions',
