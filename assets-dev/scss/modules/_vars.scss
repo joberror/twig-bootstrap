@@ -8,6 +8,7 @@ $img-path: $path-to-assets + 'img/';
 $svg-path: $path-to-assets + 'svg';
 
 // Fonts name, family and sizes
+// TODO: change font-name below
 $font-name: 'Roboto';
 $font-stack: $font-name, system-ui, sans-serif;
 $browser-font-size: 62.5%;
