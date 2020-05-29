@@ -9,12 +9,12 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://github.com/joberror/webdev-boilerplate)
+### 🏠 [Homepage](https://github.com/joberror/twig-bootstrap)
 
 ## Install
 
 ```sh
-git clone 
+git clone https://github.com/joberror/twig-bootstrap.git
 ```
 
 ## Author
@@ -27,6 +27,3 @@ git clone
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
