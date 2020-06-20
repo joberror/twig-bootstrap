@@ -40,9 +40,17 @@ Get up to speed with a new Twig web development project
 
     > composer install
 
-### Working with template
+### Getting started
 
-Search all **TODO** and **FIX** in the project folder and follow the necessary info as a guideline.
+* Search for all **TODO** comments in project files and follow the guidelines
+* Folders
+  * `template` includes twig templates.
+  * `vendor` will include Twig and other packages after `composer install` is initiated.
+  * `node-modules` will include all Node packages defined in `package.json` after `npm install` is initiated.
+  * `asset-dev` is the `Development` asset folder which will include all assets.
+  * `asset-prod` is where all processed assets files will be stored and ready for production.
+  * `includes` is the default php include folder. Twig and path setup are located here.
+* Inline comments are available as a guide in each file.
 
 ### Author
 
