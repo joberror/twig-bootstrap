@@ -17,7 +17,7 @@ Get up to speed with a new Twig web development project
   * [Terser](https://github.com/terser/terser) - Minify JS files.
   * [Sass](https://github.com/sass/sass), [CleanCSS](https://github.com/scniro/gulp-clean-css) and [CSS Purge](https://github.com/rbtech/gulp-css-purge) - Process and minify styles.
   * [Gulp image](https://github.com/1000ch/gulp-image) - Minify images and svg.
-  * [Browser Sync](https://github.com/BrowserSync/browser-sync) - Sync and auto-reload browser in Dev mode.
+  * [Browser Sync](https://github.com/BrowserSync/browser-sync) - Sync and auto-reload browser in `Development` mode.
 * [Workbox](https://developers.google.com/web/tools/workbox) - Browser cache services.
 * Sass Mixins (not activated) - [Family.css](https://lukyvj.github.io/family.scss/), [Sass-Mq](https://github.com/sass-mq/sass-mq), [KF-Sass](https://keyfram.milesalan.com/), [RFS](https://github.com/twbs/rfs), [Brand Colors](https://github.com/reimertz/brand-colors) and custom mixins.
 * Custom Javascript ES6 modules.
