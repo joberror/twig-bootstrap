@@ -11,4 +11,4 @@ let navLinkActive = (elClass) => {
         .classList.add(elClass);
 };
 
-export { navLinkActive }
+export { navLinkActive };

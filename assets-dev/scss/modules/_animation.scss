@@ -15,4 +15,53 @@
       }
     }
   }
+  // Width animation
+  @if($animation == 'width') {
+    @keyframes #{$animation} {
+      to {
+        width: $values;
+      }
+    }
+  }
+  // Show or hide animation
+  @if($animation == 'show') {
+    @keyframes #{$animation} {
+      to {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  // Blink animation like a cursor
+  @if($animation == 'blink') {
+    @keyframes #{$animation} {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  // 4 color-switch animation
+  @if($animation == 'color-rush') {
+    @keyframes #{$animation} {
+      25% {
+        color: nth($values, 1);
+      }
+
+      50% {
+        color: nth($values, 2);
+      }
+
+      75% {
+        color: nth($values, 3);
+      }
+
+      100% {
+        color: nth($values, 4);
+      }
+    }
+  }
 }

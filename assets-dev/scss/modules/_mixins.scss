@@ -34,7 +34,7 @@
 @function top-shadow($depth) {
   $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
   $blur: nth(1.5 3 10 14 19, $depth) * 4px;
-  $color: rgba(#000, nth(.12 .16 .19 .25 .30, $depth));
+  $color: rgba(#000, nth(.12 .16 .19 .25 .3, $depth));
 
   @return 0 $primary-offset $blur $color;
 }
@@ -55,7 +55,7 @@
   @if $depth < 1 {
     box-shadow: none;
   } @else if $depth > 5 {
-    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+    @warn 'Invalid $depth `#{$depth}` for mixin `card`.';
   } @else {
     box-shadow: bottom-shadow($depth), top-shadow($depth);
   }

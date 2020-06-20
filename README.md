@@ -1,48 +1,56 @@
-<h1 align="center">Twig Bootstrap 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: GNU General Public License (GPL)" src="https://img.shields.io/badge/License-GNU General Public License (GPL)-yellow.svg" />
-  </a>
-  <a href="https://twitter.com/iamjoberror" target="_blank">
-    <img alt="Twitter: @iamjoberror" src="https://img.shields.io/twitter/follow/iamjoberror.svg?style=social" />
-  </a>
-</p>
 
-### 🏠 [Homepage](https://github.com/joberror/twig-bootstrap)
+# Twig Bootstrap 🛩
 
-## Requirements
+Get up to speed with a new Twig web development project
+
+ ![Version](https://img.shields.io/github/package-json/v/joberror/twig-bootstrap?color=green) ![License: GNU General Public License (GPL)](https://img.shields.io/github/license/joberror/twig-bootstrap) ![Dev Dependencies](https://img.shields.io/david/dev/joberror/twig-bootstrap?style=flat-square) ![Twitter: @iamjoberror](https://img.shields.io/twitter/follow/iamjoberror?style=social)
+
+## Features
+
+* Extended Twig template
+* Twig Auto-loader
+* Php Path setup
+* Web structure to compliment
+  * Development mode
+  * Production mode
+* Gulp task setup for
+  * [Terser](https://github.com/terser/terser) - Minify JS files.
+  * [Sass](https://github.com/sass/sass), [CleanCSS](https://github.com/scniro/gulp-clean-css) and [CSS Purge](https://github.com/rbtech/gulp-css-purge) - Process and minify styles.
+  * [Gulp image](https://github.com/1000ch/gulp-image) - Minify images and svg.
+  * [Browser Sync](https://github.com/BrowserSync/browser-sync) - Sync and auto-reload browser in Dev mode.
+* [Workbox](https://developers.google.com/web/tools/workbox) - Browser cache services.
+* Sass Mixins (not activated) - [Family.css](https://lukyvj.github.io/family.scss/), [Sass-Mq](https://github.com/sass-mq/sass-mq), [KF-Sass](https://keyfram.milesalan.com/), [RFS](https://github.com/twbs/rfs), [Brand Colors](https://github.com/reimertz/brand-colors) and custom mixins.
+* Custom Javascript ES6 modules.
+
+### Requirements
 
 * Node
-* PHP
+* PHP + Composer
 * Any of VS Code, PhpStorm, Atom, Sublime, etc.
 
-## Getting Started
+### Installation
 
-1. **Clone**
-```sh
-git clone https://github.com/joberror/twig-bootstrap.git
-```
+    //shell command
 
-2. **Install Node Modules**
-```sh
-npm install
-```
+    > git clone https://github.com/joberror/twig-bootstrap.git
 
-3. **Install Twig using Composer**
-```sh
-composer install
-```
+    > cd twig-bootstrap
 
-4. Search all **TODO** and **FIX** in the project folder and follow the necessary info as a guideline.
+    > npm install
 
-## Author
+    > composer install
 
-* Website: https://iamjoberror.com
-* Twitter: [@iamjoberror](https://twitter.com/iamjoberror)
-* Github: [@joberror](https://github.com/joberror)
+### Working with template
+
+Search all **TODO** and **FIX** in the project folder and follow the necessary info as a guideline.
+
+### Author
+
+* Website:  [iamjoberror.com](https://iamjoberror.com)
+* Twitter:  [@iamjoberror](https://twitter.com/iamjoberror)
+* Github:   [@joberror](https://github.com/joberror)
 * LinkedIn: [@joberror](https://linkedin.com/in/joberror)
 
-## Show your support
+### Show your support
 
 Give a ⭐️ if this project helped you!

@@ -1,0 +1,108 @@
+//sass-lint:disable selector-depth, nesting-depth, no-color-literals
+
+//sass-lint:disable selector-depth, nesting-depth, no-color-literals
+
+.cl {
+  &-fw {
+    &-bold {
+      font-weight: 600;
+    }
+
+    &-light {
+      font-weight: 300;
+    }
+  }
+
+  &-fs-italic {
+    font-style: italic;
+  }
+
+  &-text {
+    &-u-line {
+      text-decoration: underline;
+    }
+
+    &-strike {
+      text-decoration: line-through;
+    }
+
+    &-wavy {
+      text-decoration: wavy;
+    }
+
+    &-dotted {
+      text-decoration: dotted;
+    }
+
+    &-dashed {
+      text-decoration: dashed;
+    }
+  }
+
+  &-bdr-underline {
+    border-bottom: 1px solid;
+    margin-bottom: 1px;
+  }
+
+  &-color {
+    &-white {
+      color: #fff;
+    }
+
+    &-dark {
+      color: gray(20);
+    }
+  }
+
+  &-hr {
+    &-vertical {
+      border: 0;
+      display: inline-block;
+      height: 1px;
+      vertical-align: middle;
+    }
+  }
+
+  &-trans {
+    &-hov-color {
+      transition: color .4s linear;
+
+      &:hover {
+        transition: color .4s linear;
+      }
+    }
+  }
+
+  &-link {
+    &-out {
+      &::after {
+        color: $color-link-out;
+        content: ' ↗';
+        opacity: 0;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Hide on Desktop
+  &-hide-el-on-all {
+    display: none;
+  }
+
+  // Hiders on layout
+  @include mq($until: tablet) {
+    &-hide-el-on-mobile {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
