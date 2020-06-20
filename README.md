@@ -11,11 +11,30 @@
 
 ### 🏠 [Homepage](https://github.com/joberror/twig-bootstrap)
 
-## Install
+## Requirements
 
+* Node
+* PHP
+* Any of VS Code, PhpStorm, Atom, Sublime, etc.
+
+## Getting Started
+
+1. **Clone**
 ```sh
 git clone https://github.com/joberror/twig-bootstrap.git
 ```
+
+2. **Install Node Modules**
+```sh
+npm install
+```
+
+3. **Install Twig using Composer**
+```sh
+composer install
+```
+
+4. Search all **TODO** and **FIX** in the project folder and follow the necessary info as a guideline.
 
 ## Author
 

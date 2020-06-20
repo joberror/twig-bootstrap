@@ -93,10 +93,10 @@ let reload = (done) => {
     browserSync.reload();
     done();
 };
-// Initialise BrowserSync with default config
+// Initialize BrowserSync with default config
 let serve = (done) => {
     browserSync.init({
-        // TODO: Define the proxy host eg:
+        // TODO: Define the web host eg:
         // Local development: 'http://localhost/mydev'
         proxy: ''
     });
