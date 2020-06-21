@@ -22,13 +22,13 @@ Get up to speed with a new Twig web development project
 * Sass Mixins (not activated) - [Family.css](https://lukyvj.github.io/family.scss/), [Sass-Mq](https://github.com/sass-mq/sass-mq), [KF-Sass](https://keyfram.milesalan.com/), [RFS](https://github.com/twbs/rfs), [Brand Colors](https://github.com/reimertz/brand-colors) and custom mixins.
 * Custom Javascript ES6 modules.
 
-### Requirements
+## Requirements
 
 * Node
 * PHP + Composer
 * Any of VS Code, PhpStorm, Atom, Sublime, etc.
 
-### Installation
+## Installation
 
     //shell command
 
@@ -40,7 +40,7 @@ Get up to speed with a new Twig web development project
 
     > composer install
 
-### Getting started
+## Getting started
 
 * Search for all **TODO** comments in project files and follow the guidelines
 * Folders
@@ -53,13 +53,13 @@ Get up to speed with a new Twig web development project
 * Run gulp task using `gulp watch` while in `Dev` mode
 * Inline comments are available as a guide in each file.
 
-### Author
+## Author
 
 * Website:  [iamjoberror.com](https://iamjoberror.com)
 * Twitter:  [@iamjoberror](https://twitter.com/iamjoberror)
 * Github:   [@joberror](https://github.com/joberror)
 * LinkedIn: [@joberror](https://linkedin.com/in/joberror)
 
-### Show your support
+## Show your support
 
 Give a ⭐️ if this project helped you!

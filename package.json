@@ -1,7 +1,7 @@
 {
-  "name": "webdev-bolierplate",
+  "name": "twig-bootstrap",
   "description": "Simple starter node plugins for web development",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "GNU General Public License (GPL)",
   "homepage": "https://github.com/joberror/webdev-boilerplate",
   "email": "joberror@gmail.com",
@@ -17,7 +17,6 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-css-purge": "latest",
     "gulp-image": "^6.1.0",
-    "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^2.0.3",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "latest",
