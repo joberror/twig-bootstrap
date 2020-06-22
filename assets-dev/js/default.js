@@ -4,6 +4,8 @@
 /**
  * Detect and apply active menu class
  * @param {string} elClass css class name
+ * How-to:
+ * Script - > import navLinkActive module - > importModuleName('active_Link_Class_Name')
  */
 let navLinkActive = (elClass) => {
     document.querySelector('nav a[href^="/' + location.pathname.split("/")[1] + '"]')
@@ -11,6 +13,13 @@ let navLinkActive = (elClass) => {
         .classList.add(elClass);
 };
 
+/**
+ * Load svg in html files
+ * A snippet of https: //blobfolio.com/2018/06/lazy-loading-sprites-inline/
+ * How-to:
+ * Script -> import svgLoader module -> importModuleName.init();
+ * HTML -> <svg data-url='URL_of_SVG_File'></svg>
+ */
 let svgLoader = (() => {
     let process = {
         init: () => {
@@ -86,4 +95,7 @@ let svgLoader = (() => {
     };
 })();
 
-export { navLinkActive, svgLoader };
+export {
+    navLinkActive,
+    svgLoader
+};
