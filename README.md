@@ -47,10 +47,10 @@ Get up to speed with a new Twig web development project
   * `templates` includes twig templates.
   * `vendor` will include Twig and other packages after `composer install` is initiated.
   * `node_modules` will include all Node packages defined in `package.json` after `npm install` is initiated.
-  * `asset-dev` is the `Development` asset folder which will include all assets.
-  * `asset-prod` is where all processed assets files will be stored and ready for production.
+  * `assets-dev` is the `Development` asset folder which will include all assets.
+  * `assets-prod` is where all processed assets files will be stored and ready for production.
   * `includes` is the default php include folder. Twig and path setup are located here.
-* Run gulp task using `gulp watch` while in `Dev` mode
+* Run gulp task from terminal using `gulp` in project root directory while in `Dev` mode
 * Inline comments are available as a guide in each file.
 
 ## Author
