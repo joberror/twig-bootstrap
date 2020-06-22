@@ -9,4 +9,5 @@ out
 gen
 *lsp/*
 *.history/
+node_modules/**
 
