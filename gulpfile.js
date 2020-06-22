@@ -126,7 +126,7 @@ let reload = (done) => {
 let serve = (done) => {
     browserSync.init({
         // TODO: Define the web host eg:
-        // Local development: 'http://localhost/mydev'
+        // eg 'http://localhost/myweb' or 'http://myweb.test'
         proxy: ''
     });
 
