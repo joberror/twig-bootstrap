@@ -10,4 +10,4 @@ gen
 *lsp/*
 *.history/
 node_modules/**
-
+.vscode/
