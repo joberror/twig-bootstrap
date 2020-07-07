@@ -66,7 +66,6 @@ let cssPurge = () =>
 // All minified scripts goes to: /assets-prod/css/ folder with a .min suffix file name.
 let minifyCSS = () =>
     gulp.src(SRC_PG_CSS_DEV)
-    //.pipe(purgeCSS)
     .pipe(plugins.cleanCss({
         debug: true
     }, (details) => {
@@ -75,7 +74,8 @@ let minifyCSS = () =>
     .pipe(plugins.rename({
         suffix: '.min'
     }))
-    .pipe(gulp.dest(DEST_CSS_PROD));
+    .pipe(gulp.dest(DEST_CSS_PROD))
+    .pipe(browserSync.stream());
 
 // Process .scss files in the directory: /assets-dev/scss/ using node Sass modules.
 let convertScss = () =>

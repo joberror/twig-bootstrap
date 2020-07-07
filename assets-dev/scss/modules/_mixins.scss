@@ -29,6 +29,12 @@
   }
 }
 
+// Gray color function
+// @param {Number} - gray level
+@function gray ($level) {
+  @return lighten(#000, $level * 1%);
+}
+
 // Computes a top-shadow for a card effect.
 // @param {Number} $depth - depth level
 @function top-shadow($depth) {
