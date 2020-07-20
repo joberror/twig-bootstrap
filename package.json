@@ -18,7 +18,7 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-css-purge": "^3.0.9",
-    "gulp-image": "^6.2.0",
+    "gulp-image": "^6.2.1",
     "gulp-load-plugins": "^2.0.3",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
