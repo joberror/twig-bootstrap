@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "lodash.template": "^4.5.0",
-    "bl": ">=1.2.3"
+    "bl": ">=4.1.0"
   }
 }
