@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "lodash.template": "^4.5.0",
-    "bl": ">=4.1.0"
+    "bl": ">=4.1.0",
+    "is-svg": ">=4.2.2"
   }
 }
