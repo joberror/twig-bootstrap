@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "brand-colors": "^2.1.1",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.3",
     "cssnano": "5.0.5",
     "family.scss": "^1.0.8",
     "fibers": "^5.0.0",
