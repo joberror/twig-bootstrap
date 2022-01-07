@@ -29,7 +29,7 @@
     "gulp-terser-js": "^5.2.2",
     "gulp-watch": "^5.0.1",
     "kf-sass": "^1.0.1",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "postcss": "^8.4.5",
     "rfs": "^9.0.6",
     "sass": "^1.46.0",
