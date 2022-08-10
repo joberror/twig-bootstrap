@@ -41,7 +41,7 @@
   "dependencies": {
     "lodash.template": "^4.5.0",
     "bl": ">=5.0.0",    
-    "hosted-git-info": ">=4.0.2",
+    "hosted-git-info": ">=5.1.0",
     "is-svg": ">=4.3.2",
     "xmlhttprequest-ssl": ">=2.0.0"
   }
