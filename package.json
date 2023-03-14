@@ -43,6 +43,6 @@
     "bl": ">=5.0.0",    
     "hosted-git-info": ">=6.1.1",
     "is-svg": ">=4.3.2",
-    "xmlhttprequest-ssl": ">=2.0.0"
+    "xmlhttprequest-ssl": ">=2.1.0"
   }
 }
