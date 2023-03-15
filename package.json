@@ -19,7 +19,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-css-purge": "^3.0.9",
     "gulp-image": "^6.3.1",
-    "gulp-load-plugins": "^2.0.7",
+    "gulp-load-plugins": "^2.0.8",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
@@ -32,7 +32,7 @@
     "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
     "rfs": "^9.0.6",
-    "sass": "^1.57.1",
+    "sass": "^1.59.3",
     "sass-mq": "^6.0.0"
   },
   "optionalDependencies": {
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "lodash.template": "^4.5.0",
-    "bl": ">=5.0.0",    
+    "bl": ">=6.0.0",    
     "hosted-git-info": ">=6.1.1",
     "is-svg": ">=4.3.2",
     "xmlhttprequest-ssl": ">=2.1.0"
