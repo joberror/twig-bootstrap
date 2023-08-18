@@ -32,7 +32,7 @@
     "node-sass": "^9.0.0",
     "postcss": "^8.4.23",
     "rfs": "^10.0.0",
-    "sass": "^1.62.1",
+    "sass": "^1.66.0",
     "sass-mq": "^6.0.0"
   },
   "optionalDependencies": {
