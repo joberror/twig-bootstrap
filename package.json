@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "lodash.template": "^4.5.0",
-    "bl": ">=6.0.3",    
-    "hosted-git-info": ">=7.0.1",
+    "bl": ">=6.0.7",    
+    "hosted-git-info": ">=6.1.1",
     "is-svg": ">=5.0.0",
     "xmlhttprequest-ssl": ">=2.1.0"
   }
